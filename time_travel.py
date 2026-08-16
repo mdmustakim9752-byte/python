@@ -9,7 +9,6 @@ db_path = os.path.join(current_dir, "zoya_brain.db")
 conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
 
-
 # 4 din purani date force inject kar rahe hain (Wednesday, 12 August)
 cursor.execute("UPDATE user_profiles SET last_seen = 'Wednesday, 12 August 2026, 10:41 PM'")
 conn.commit()
